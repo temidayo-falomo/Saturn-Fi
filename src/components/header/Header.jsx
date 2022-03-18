@@ -14,10 +14,11 @@ function Header() {
             provider.</h1>
           <p>Automate financial transactions, Trade P2P, and do lots more.</p>
           <button className="blue-btn">Contact Us</button>
+          <img src="./assets/y-image.svg" alt="" className="y-image"/>
         </div>
 
         <div className="right-header">
-            <img src="./assets/Group 8.svg" alt="" />
+            <img src="./assets/Group 8.svg" alt=""/>
         </div>
       </div>
     </header>

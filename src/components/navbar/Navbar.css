@@ -1,12 +1,13 @@
-nav {
+.nav {
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 15px;
-    padding-top: 30px;
-    padding-bottom: 60px;
     width: 100%;
     color: #fff;
+    position: fixed;
+    z-index: 99999;
+    top: 0;
 }
 
 .nav-container {
@@ -14,7 +15,12 @@ nav {
     width: 80%;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 20px 0;
+}
+
+.nav.active {
+    background-color: #1533b6;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .logo {
@@ -30,11 +36,11 @@ nav {
 }
 
 .nav-links li a {
-    color: var(--Very-Dark-Blue);
+    color: #fff;
 }
 
 .nav-links li a:hover {
-    color: rgb(104, 104, 104);
+    color: #5465FF;
 }
 
 span {
@@ -104,17 +110,7 @@ li {
     gap: 5px;
 }
 
-@media(max-width: 1200px) {
-    .nav-container .btn {
-        display: none;
-    }
-}
-
-@media(max-width: 1200px) {
-
-   .nav-container button {
-        display: none;
-    }
+@media(max-width: 1250px) {
 
     .nav-container {
         flex-direction: column;
@@ -124,7 +120,8 @@ li {
     .menu-item {
         display: block;
         font-size: 25px;
-        color: #fff;
+        color: black;
+        z-index: 1111111;
     }
 
     .mobile-container {
@@ -137,27 +134,33 @@ li {
     .sidebar {
         display: flex;
         flex-direction: column;
-        width: 80%;
+        width: 100%;
         position: absolute;
         opacity: 1;
-        transition: all 0.5s ease;
         justify-content: flex-start;
         align-items: center;
+        transition: all 0.9s ease;
         font-size: 20px;
-        text-align: center;
-        top: -1000px;
-        background-color: #5465FF;
+        left: -1000%;
+        /* right: 0;
+        bottom: 0; */
+        background-color: rgba(32, 31, 31, 0.849);
         box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-        border-radius: 10px;
+        color: black;
+        text-align: left;
+        align-items: flex-start;
+        min-height: 100%;
+        top: -20px;
     }
 
     .sidebar.active {
-        transition: all 0.5s ease;
-        z-index: 111;
+        position: fixed;
+        z-index: 1111;
         opacity: 1;
         transition: all 0.5s ease;
-        z-index: 111111;
-        top: 100px;
+        z-index: 11111;
+        left: 0;
+        min-height: 150%;
     }
 
     .nav-links {
@@ -167,6 +170,39 @@ li {
         margin-top: 20px;
         text-align: center;
         padding: 40px 0;
+        background-color: #fff;
+        width: 100%;
+        text-align: left;
+        align-items: flex-start;
+        padding: 150px 20px 50px 20px;
+        z-index: 11111111;
+    }
+
+
+    .nav-links li {
+        width: 100%;
+    }
+
+    .nav-links li a {
+        border-bottom: 1px #E6E6E6 solid;
+        width: 95%;
+        padding: 10px 0;
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        color: #00031A;
+    }
+
+    .nav-links li a span {
+        font-size: 15px;
+    }
+
+    .nav-links li button {
+        display: none;
+    }
+
+    .logo {
+        z-index: 111111;
     }
     
 }

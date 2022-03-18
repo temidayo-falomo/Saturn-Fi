@@ -8,7 +8,8 @@ function TopPart() {
     <Navbar />
     <Header />
     <div className="waves">
-      <img src="./assets/hero-bg.svg" alt="" />
+      <img src="./assets/new-hero-bg.svg" alt="" className="hero-bg"/>
+      <img src="./assets/Slice 1.svg" alt="" className="useHero"/>
     </div>
     </div>
 }

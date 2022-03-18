@@ -12,25 +12,36 @@ form {
     align-items: center;
 }
 
-form .blue-btn {
+form .form-btn {
     width: 100%;
     padding: 15px 0;
+    border-radius: 10px;
+    background: #5465FF;
+    color: #fff;
+    font-weight: 700;
     box-shadow: 0px 2px 4px rgba(40, 41, 61, 0.04), 0px 8px 16px rgba(96, 97, 112, 0.16);
 }
 
-form .blue-btn:hover {
-    border: 2px blue solid;
+form .form-btn:hover {
+    background-color: transparent;
+    border: 2px #5465FF solid;
+    color: #5465FF;
 }
 
 section .form-container {
     padding: 10px;
     min-width: 40%;
     margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .form-container h2 {
     text-align: center;
     margin-bottom: 20px;
+    color: #00031A;
+    width: 85%;
 }
 
 .form-inputs {
@@ -51,6 +62,8 @@ section .form-container {
     border-radius: 5px;
     border: 1px solid #BDBDBD;
     background-color: #F2F2F2;
+    width: 100%;
+    padding: 7px;
 }
 
 .form-inputs input {
@@ -74,7 +87,7 @@ label {
     color: #333333;
 }
 
-@media(max-width: 350px) {
+@media(max-width: 380px) {
     .flex-div {
         flex-direction: column;
     }
