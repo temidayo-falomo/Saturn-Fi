@@ -97,4 +97,8 @@ label {
     .message-input textarea {
         width: 100%;
     }
+
+    .form-container h2 {
+        font-size: 22px;
+    }
 }

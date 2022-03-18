@@ -40,7 +40,7 @@
 }
 
 .nav-links li a:hover {
-    color: #5465FF;
+    color: #9da5f3;
 }
 
 span {
@@ -142,8 +142,6 @@ li {
         transition: all 0.9s ease;
         font-size: 20px;
         left: -1000%;
-        /* right: 0;
-        bottom: 0; */
         background-color: rgba(32, 31, 31, 0.849);
         box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
         color: black;
