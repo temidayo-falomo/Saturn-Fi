@@ -29,7 +29,7 @@ const Navbar = () => {
           )}
           <div className="menu-item" onClick={handleClick}>
             {click ? (
-              <RiCloseLine className="hamburger" />
+              <RiCloseLine className="close" />
             ) : (
               <img src="./assets/close-line.svg" alt="" className="hamburger" />
             )}

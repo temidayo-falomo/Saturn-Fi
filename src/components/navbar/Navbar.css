@@ -68,30 +68,6 @@ span {
     width: 800px;
 }
 
-.btn {
-    background-color: var(--Bright-Red);
-    padding: 15px 35px;
-    color: white;
-    border-radius: 35px;
-    box-shadow: rgba(250, 114, 41, 0.3) 0px 19px 38px, rgba(243, 92, 45, 0.22) 0px 15px 12px;
-}
-
-.btn:hover {
-    color: var(--Bright-Red);
-    background-color: transparent;
-    border: 2px var(--Bright-Red) solid;
-}
-
-.link {
-    border-bottom: 2px white solid;
-    padding-bottom: 10px;
-}
-
-.link.active {
-    border-bottom: 2px white solid;
-    padding-bottom: 10px;
-}
-
 .hamburger {
     color: var(--Very-Dark-Blue);
 }
@@ -210,5 +186,13 @@ li {
     .logo {
         z-index: 111111;
     }
-    
+}
+
+@media(max-width: 450px) {
+    .logo {
+        width: 45px;
+    }
+    .active {
+        padding: 0;
+    }
 }
