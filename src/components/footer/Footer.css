@@ -71,4 +71,8 @@ li a span {
         align-items: flex-start;
         width: 80%;
     }
+
+    footer p {
+        font-size: 14px;
+    }
 }

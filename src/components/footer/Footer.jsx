@@ -22,7 +22,7 @@ const Footer = () => {
             </li>
             <li>
               <a href="/">
-                SDK/API Docs<span>(Coming Soon)</span>
+                SDK/API Docs<span> (Coming Soon)</span>
               </a>
             </li>
           </ul>
@@ -38,7 +38,7 @@ const Footer = () => {
       </div>
 
       <div className="cyr">
-          <p>@2022 Saturn Fi.All rights Reserved.</p>
+          <p>@2022 SaturnFi.co All rights Reserved.</p>
           <p>Info@ SaturnFi.co</p>
     </div>
     </footer>

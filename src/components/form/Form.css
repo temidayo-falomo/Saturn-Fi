@@ -89,7 +89,15 @@ label {
     color: #333333;
 }
 
-@media(max-width: 380px) {
+@media(max-width: 450px) {
+    .form-container {
+        width: 90%;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
     .flex-div {
         flex-direction: column;
     }
@@ -100,5 +108,6 @@ label {
 
     .form-container h2 {
         font-size: 22px;
+        margin-bottom: 30px;
     }
 }
