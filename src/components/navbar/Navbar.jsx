@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Navbar.css";
 import { RiCloseLine } from "react-icons/ri";
-import { GiHamburgerMenu } from "react-icons/gi";
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
@@ -9,29 +8,29 @@ const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
 
   const changeBackground = () => {
-    if(window.scrollY >= 80) {
-      setNavbar(true)
-    }else {
-      setNavbar(false)
+    if (window.scrollY >= 80) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
     }
-  }
+  };
 
-  window.addEventListener('scroll', changeBackground)
+  window.addEventListener("scroll", changeBackground);
 
   return (
-    <nav className={navbar ? 'nav active' : 'nav'}>
+    <nav className={navbar ? "nav active" : "nav"}>
       <div className="nav-container">
         <div className="mobile-container">
           {click ? (
-            <img src="./assets/blue-logo.svg" alt="" className="logo" />
+            <img src="./assets/blue-logo.svg" alt="logo" className="logo" />
           ) : (
-            <img src="./assets/logo.svg" alt="" className="logo" />
+            <img src="./assets/logo.svg" alt="logo" className="logo" />
           )}
           <div className="menu-item" onClick={handleClick}>
             {click ? (
               <RiCloseLine className="close" />
             ) : (
-              <img src="./assets/close-line.svg" alt="" className="hamburger" />
+              <img src="./assets/close-line.svg" alt="menu" className="hamburger" />
             )}
           </div>
         </div>
